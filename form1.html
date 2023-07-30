@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <h1 id="title">
+            Survey From WEBHUB
+        </h1>
+        <p id="description">
+            Thank you for taking the time to help us to improve the platform.
+        </p>
+    </header>
+    <form action="" id="survey-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" class="formControl" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address <span class="clue">(optional)</span></label>
+            <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address" required>
+        </div>
+        <div class="form-group">
+            <p id="quest">Which option best describe your current role?</p>
+            <select name="role" id="dropdown" class="formControl" required>
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="job">Job</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- radiobutton section -->
+
+        <div class="form-group">
+            <p id="quest">How you cone to know abount WEBHUB</p>
+            <label for="">
+                <input type="radio" name="source" value="friends" class="inputRadio" checked>Friends
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="tv-ads" class="inputRadio">Tv-ads
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="social-media" class="inputRadio">Social Media
+            </label>
+            <label for="">
+                <input type="radio" name="source" value="newspapers" class="inputRadio">Newspapers
+            </label>
+            <label for="">
+                <input type="radio" name="other" value="friends" class="inputRadio">Other
+            </label>
+        </div>
+        <!-- checkbox section -->
+
+        <div class="form-group">
+            <p id="quest">Would you like to see improved</p>
+            <label for="">
+                <input type="checkbox" name="prefer" class="back-end-dev">Back-end Developer
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" class="front-end-dev">Front-end Developer
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" class="app-dev">Androind App Developer
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" class="soft-engineerinf">Software Engineering
+            </label>
+            <label for="">
+                <input type="checkbox" name="prefer" class="other">Other
+            </label>
+        </div>
+        <!-- textarea section -->
+
+        <div class="form-group">
+            <p id="quest">Give us your feedback</p>
+            <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter your feedback here..."></textarea>
+        </div>
+        <!-- submit button -->
+        <div class="form-group">
+            <button type="submit" id="submit" class="btn">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
